@@ -1,6 +1,10 @@
-# Heroku Buildpack: NGINX
+# Heroku Buildpack: NGINX (for HiMama)
 
 Nginx-buildpack vendors NGINX inside a dyno and connects NGINX to an app server via UNIX domain sockets.
+
+This fork contains modifications made specifically for HiMama's infrastructure, and includes the following.
+
+- Google PageSpeed NGINX Add-On Module
 
 ## Motivation
 
@@ -9,7 +13,7 @@ Some application servers (e.g. Ruby's Unicorn) halt progress when dealing with n
 ## Versions
 
 ### Heroku 16
-* NGINX Version: 1.9.5
+* NGINX Version: 1.14.0
 ### Heroku 18
 * NGINX Version: 1.18.0
 ### Heroku 20
